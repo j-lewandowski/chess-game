@@ -1,9 +1,13 @@
-import pieceImage from "../assets/black/Chess_pdt45.svg";
+import { Piece as PieceType } from "../Types";
 
-const Piece = () => {
+interface PiecePropTypes {
+  data: PieceType;
+}
+
+const Piece: React.FC<PiecePropTypes> = ({ data }) => {
   return (
     <div>
-      <img src={pieceImage} alt="piece" className="w-14 h-auto" />
+      <img src={data.image} alt="piece" className="w-14 h-auto" />
     </div>
   );
 };

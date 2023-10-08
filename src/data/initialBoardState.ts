@@ -9,6 +9,8 @@
 //   ["WR", "WKN", "WW", "WKG", "WQ", "WW", "WKN", "WR"],
 // ];
 
-const initialBoardState = [[], [], [], [], [], [], [], ["BP"]];
+// const initialBoardState = [[], [], [], [], [], [], [], ["BP"]];
 
-export default initialBoardState;
+const initialFENBoardState = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR";
+
+export default initialFENBoardState;

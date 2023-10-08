@@ -1,10 +1,10 @@
-import { ReactElement } from "react";
 import { twMerge } from "tailwind-merge";
+import { ReactElement } from "react";
 
 interface FieldPropTypes {
   x: number;
   y: number;
-  piece?: ReactElement;
+  piece: ReactElement | null;
 }
 
 const Field: React.FC<FieldPropTypes> = ({ x, y, piece }) => {
